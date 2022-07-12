@@ -17,7 +17,7 @@ You can define as many items as you want and you can create submenus as well! An
         - `open` - runs the file specified with full path in the `value` property of the selected item
         - `website` - opens the website specified in the `value` property of the selected item
     - `value` {string} - value associated with this menu item
-    - `icon` {string} - file name inside `src/assets` directory
+    - `icon` {string} - [icon name](#available-icons)
     - `beginGroup` {boolean} - if `true` a separator is added before the menu item (default is `false`)
     - `items` {MenuItem[]} - list of submenu items
 
@@ -66,3 +66,28 @@ Here is an example for a configuration file (`config.json`):
 and the resulting menu looks like this:
 
 ![example](/docs/image1.png "example")
+
+## Available Icons
+
+Each item can have an icon set by `icon` property. Available icons are:
+
+- ![arsenal](/src/assets/arsenal.png "arsenal") - `arsenal`
+- ![bg](/src/assets/bg.png "bg") - `bg`
+- ![code](/src/assets/code.png "code") - `code`
+- ![csharp](/src/assets/csharp.png "csharp") - `csharp`
+- ![database](/src/assets/database.png "database") - `database`
+- ![eu](/src/assets/eu.png "eu") - `eu`
+- ![excel](/src/assets/excel.png "excel") - `excel`
+- ![file](/src/assets/file.png "file") - `file`
+- ![git](/src/assets/git.png "git") - `git`
+- ![github](/src/assets/github.png "github") - `github`
+- ![gmail](/src/assets/gmail.png "gmail") - `gmail`
+- ![ie](/src/assets/ie.png "ie") - `ie`
+- ![javascript](/src/assets/javascript.png "javascript") - `javascript`
+- ![opera](/src/assets/opera.png "opera") - `opera`
+- ![password](/src/assets/password.png "password") - `password`
+- ![pdf](/src/assets/pdf.png "pdf") - `pdf`
+- ![quit](/src/assets/quit.png "quit") - `quit`
+- ![ro](/src/assets/ro.png "ro") - `ro`
+- ![server](/src/assets/server.png "server") - `server`
+- ![word](/src/assets/word.png "word") - `word`
