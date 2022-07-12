@@ -49,6 +49,7 @@ Here is an example for a configuration file:
                 "value": "password2",
                 "action": "copy"
             }
+        ]
     }
 ]
 ```
