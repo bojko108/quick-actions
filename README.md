@@ -4,7 +4,7 @@ Win app for storing passwords and various shortcuts for quick access from the sy
 
 ## Config File
 
-All items, available in the qucik actions menu are described in a JSON configuration file. THe configuration file is stored in either the application settings directory: `` or in the installation directory (where the exe file is located): 
+All items, available in the qucik actions menu are described in a JSON configuration file - `config.json`. The configuration file is stored in the application settings directory: `C:\Users\<username>\AppData\Roaming\Quick Actions`.
 
 ### Item properties
 
@@ -23,7 +23,7 @@ You can define as many items as you want and you can create submenus as well! An
 
 ### Example 
 
-Here is an example for a configuration file:
+Here is an example for a configuration file (`config.json`):
 
 ```json
 [
@@ -63,6 +63,6 @@ Here is an example for a configuration file:
 ]
 ```
 
-and it looks like this:
+and the resulting menu looks like this:
 
 ![example](/docs/image1.png "example")
