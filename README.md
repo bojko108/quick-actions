@@ -10,7 +10,16 @@ All items, available in the qucik actions menu are described in a JSON configura
 
 You can define as many items as you want and you can create submenus as well! An item can have the following properties:
 
-
+- MenuItem object:
+    - `title` {string} - text shown in the menu
+    - `action` {'copy'|'open'|'website'} - action to run when the menu item is clicked:
+        - `copy` - copies the `value` property of the selected item to the clipboard
+        - `open` - runs the file specified with full path in the `value` property of the selected item
+        - `website` - opens the website specified in the `value` property of the selected item
+    - `value` {string} - value associated with this menu item
+    - `icon` {string} - file name inside `src/assets` directory
+    - `beginGroup` {boolean} - if `true` a separator is added before the menu item (default is `false`)
+    - `items` {MenuItem[]} - list of submenu items
 
 ### Example 
 
@@ -56,4 +65,4 @@ Here is an example for a configuration file:
 
 and it looks like this:
 
-![IMAGE](https://)
+![example](/docs/image1.png "example")

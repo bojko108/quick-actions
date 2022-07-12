@@ -14,6 +14,13 @@ const defaultItems = [{
 }];
 
 /**
+ * @type {Array<MenuItem>}
+ */
+const noItemsInConfigItem = {
+    title: 'Config file not found!',
+};
+
+/**
  * @returns {Array<MenuItem>}
  */
 const getItemsFromConfig = () => {
@@ -21,13 +28,17 @@ const getItemsFromConfig = () => {
     // console.log(require('process').execPath);
 
     let result = [];
+
     try {
         let configPath = path.join(app.getPath('exe'), 'config.json');
         if (fs.existsSync(configPath) == false)
             configPath = path.join(app.getPath('userData'), 'config.json');
-
-        const contents = fs.readFileSync(configPath, 'utf-8');
-        result.push(...JSON.parse(contents));
+        if (fs.existsSync(configPath) == false) {
+            result.push(noItemsInConfigItem);
+        } else {
+            const contents = fs.readFileSync(configPath, 'utf-8');
+            result.push(...JSON.parse(contents));
+        }
     } catch {}
 
     result.push(...defaultItems);
