@@ -14,6 +14,7 @@ You can define as many items as you want and you can create submenus as well! An
     - `title` {string} - text shown in the menu
     - `action` {'copy'|'open'|'website'} - action to run when the menu item is clicked:
         - `copy` - copies the `value` property of the selected item to the clipboard
+        - `quig` - creates a new uuid (e.g. `abedb360-242c-444f-87d8-640f63f38432`) and copies it to the clipboard
         - `open` - runs the file specified with full path in the `value` property of the selected item
         - `website` - opens the website specified in the `value` property of the selected item
     - `value` {string} - value associated with this menu item
