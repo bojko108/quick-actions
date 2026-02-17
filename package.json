@@ -21,29 +21,33 @@
     "config": {
         "forge": {
             "packagerConfig": {},
-            "makers": [{
-                "name": "@rabbitholesyndrome/electron-forge-maker-portable",
-                "config": {
-                    "appId": "com.bojkosoft.quickactions",
-                    "copyright": "Copyright © 2022 ${author.name}",
-                    "artifactName": "${productName}-v${version}.exe",
-                    "nsis": {
-                        "installerIcon": "${icon}"
+            "makers": [
+                {
+                    "name": "@rabbitholesyndrome/electron-forge-maker-portable",
+                    "config": {
+                        "appId": "com.bojkosoft.quickactions",
+                        "copyright": "Copyright © 2026 ${author.name}",
+                        "artifactName": "${productName}-v${version}.exe",
+                        "nsis": {
+                            "installerIcon": "${icon}"
+                        }
                     }
                 }
-            }]
+            ]
         }
     },
     "dependencies": {
-        "electron-squirrel-startup": "^1.0.0"
+        "electron-squirrel-startup": "^1.0.1",
+        "uuid": "^13.0.0"
     },
     "devDependencies": {
-        "@electron-forge/cli": "^6.0.0-beta.64",
-        "@electron-forge/maker-deb": "^6.0.0-beta.64",
-        "@electron-forge/maker-rpm": "^6.0.0-beta.64",
-        "@electron-forge/maker-squirrel": "^6.0.0-beta.64",
-        "@electron-forge/maker-zip": "^6.0.0-beta.64",
-        "@rabbitholesyndrome/electron-forge-maker-portable": "^0.1.1",
-        "electron": "19.0.8"
-    }
+        "@electron-forge/cli": "^7.11.1",
+        "@electron-forge/maker-deb": "^7.11.1",
+        "@electron-forge/maker-rpm": "^7.11.1",
+        "@electron-forge/maker-squirrel": "^7.11.1",
+        "@electron-forge/maker-zip": "^7.11.1",
+        "@rabbitholesyndrome/electron-forge-maker-portable": "^0.2.0",
+        "electron": "40.4.1"
+    },
+    "packageManager": "yarn@4.6.0+sha512.5383cc12567a95f1d668fbe762dfe0075c595b4bfff433be478dbbe24e05251a8e8c3eb992a986667c1d53b6c3a9c85b8398c35a960587fbd9fa3a0915406728"
 }

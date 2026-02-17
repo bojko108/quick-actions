@@ -1,4 +1,4 @@
-/** @typedef {'copy'|'open'|'website'|'exit'} Action */
+/** @typedef {'guid','copy'|'open'|'website'|'exit'} Action */
 
 /**
  * @typedef ItemTag

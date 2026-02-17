@@ -1,4 +1,5 @@
 const { app, Menu, clipboard, shell } = require('electron');
+const { v4: uuidv4, } = require('uuid');
 const path = require('path');
 const items = require('./items');
 
@@ -28,6 +29,10 @@ const menuItems = items.map((item) => {
                         break;
                     case 'copy':
                         clipboard.writeText(item.tag.value, 'clipboard')
+                        break;
+                    case 'guid':
+                        const guid = uuidv4();
+                        clipboard.writeText(guid, 'clipboard')
                         break;
                     case 'website':
                         shell.openExternal(item.tag.value);
