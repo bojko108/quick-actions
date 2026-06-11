@@ -2,7 +2,7 @@
     "name": "quick-actions",
     "productName": "Quick Actions",
     "icon": "./assets/icon.ico",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Win app for storing passwords and various shortcuts for quick access from the system tray.",
     "main": "src/index.js",
     "scripts": {
