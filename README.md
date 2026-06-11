@@ -18,6 +18,7 @@ You can define as many items as you want and you can create submenus as well! An
         - `open` - runs the file specified with full path in the `value` property of the selected item
         - `website` - opens the website specified in the `value` property of the selected item
     - `value` {string} - value associated with this menu item
+    - `params` {string} - command line arguments to pass to the executable (when `action="open"`)
     - `icon` {string} - [icon name](#available-icons)
     - `beginGroup` {boolean} - if `true` a separator is added before the menu item (default is `false`)
     - `items` {MenuItem[]} - list of submenu items
@@ -59,6 +60,17 @@ Here is an example for a configuration file (`config.json`):
                 "value": "password2",
                 "action": "copy"
             }
+        ]
+    }, {
+        "title": "Connections",
+        "icon": "server",
+        "items": [
+                    {
+				"title": "DEO New Env",
+				"value": "C:\\Program Files\\Omnissa\\Omnissa Horizon Client\\horizon-client.exe",
+				"params": "-serverUrl server.url.address -userName adnet\\### -password ### -appName \"Google Chrome PMP\"",
+				"action": "open"
+			}
         ]
     }
 ]
